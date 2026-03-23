@@ -6,6 +6,8 @@ claw = Claw(model="mistral")
 with open("tfplan_small.txt") as f:
     plan = f.read().strip()
 
+plan = plan[:10000]
+
 prompt = f"""
 Analyze this Terraform plan and identify:
 
