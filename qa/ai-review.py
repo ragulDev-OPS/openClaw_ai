@@ -18,6 +18,7 @@ Terraform Plan:
 {plan}
 """
 
-response = claw.generate(prompt)
+# ✅ FIX HERE
+response = claw.run(prompt)
 
 print(response)
